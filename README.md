@@ -1,10 +1,10 @@
 # Next + TailwindCSS + Zustand template
 
-Template for starting frontend projects. Contains custom hooks, some built in components, and utility libraries
+Template for starting frontend projects. Contains custom hooks, built in components, and utility libraries.
 
-Hosted [here](https://ntz-five.vercel.app/)
+Interact with the components [here!](https://ntz-five.vercel.app/)
+
 ![image](https://user-images.githubusercontent.com/57426646/210043800-6e92c393-9b91-4799-93f2-bd421c278584.png)
-
 
 ## Libraries included:
 
@@ -22,13 +22,14 @@ Hosted [here](https://ntz-five.vercel.app/)
 ## Components:
 
 -   Button: A button component with the following variants - `standard`, `outlined`, `icon`, `danger`
-
 -   Input: An input component. That's it :p (for now)
-
 -   Modal: A modal component that uses the `useOnClickOutside` hook
+
+## Credits:
+
+-   [useHooks](https://usehooks.com/) for the custom hook recipes
 
 ## To be added:
 
 -   Tooltip component
-
 -   Variants and states for existing components

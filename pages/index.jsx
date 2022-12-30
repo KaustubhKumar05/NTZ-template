@@ -39,7 +39,11 @@ export default function Home() {
         <>
             <Head>
                 <title>NTZ Template</title>
-                <meta name="description" content="Landing page for project template" />
+                <meta name="description" content="Start building with NTZ" />
+                <meta
+                    property="og:image"
+                    content="https://user-images.githubusercontent.com/57426646/210043800-6e92c393-9b91-4799-93f2-bd421c278584.png"
+                />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

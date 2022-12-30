@@ -1,31 +1,60 @@
 import { useState } from 'react';
 import Head from 'next/head';
+import {
+    LegoIcon,
+    WebhookIcon,
+    DownloadIcon,
+    LayoutIcon,
+    GithubIcon
+} from '@100mslive/react-icons';
 import Input from '../components/common/Input';
 import Button from '../components/common/Button';
-import { LegoIcon, WebhookIcon, DownloadIcon, LayoutIcon } from '@100mslive/react-icons';
 import Modal from '../components/common/Modal';
 
 const tech = [
-    { title: 'Next.js', subText: "Flexible React framework that's fast - supports SSR, SSG" },
+    {
+        title: 'Next.js',
+        subText: "Flexible React framework that's fast - supports SSR, SSG",
+        link: 'https://nextjs.org/docs/getting-started'
+    },
 
-    { title: 'TailwindCSS', subText: 'A utility-first CSS framework for rapid styling' },
+    {
+        title: 'TailwindCSS',
+        subText: 'A utility-first CSS framework for rapid styling',
+        link: 'https://tailwindcss.com/docs/installation'
+    },
     {
         title: 'Zustand',
-        subText: 'A small, fast and scalable bearbones state-management solution'
+        subText: 'A small, fast and scalable bearbones state-management solution',
+        link: 'https://github.com/pmndrs/zustand'
     },
     {
         title: 'React Icons',
-        subText: 'Icon library by 100ms'
+        subText: 'Icon library developed by 100ms',
+        link: 'https://ui.100ms.live/'
     },
-    { title: 'UUID', subText: 'For generating random and unique IDs' }
+    {
+        title: 'UUID',
+        subText: 'For generating random and unique IDs',
+        link: 'https://www.npmjs.com/package/uuid'
+    }
 ];
 const hooks = [
     {
         title: 'useLocalStorage',
-        subText: 'Create states that persist using local storage'
+        subText: 'Create states that persist using local storage',
+        link: 'https://github.com/KaustubhKumar05/NTZ-template/blob/main/hooks/useLocalStorage.js'
     },
-    { title: 'useDebounce', subText: 'Handles debounce for values that change quickly' },
-    { title: 'useOnClickOutside', subText: 'Listen for clicks outside the element of interest' }
+    {
+        title: 'useDebounce',
+        subText: 'Handles debounce for values that change quickly',
+        link: 'https://github.com/KaustubhKumar05/NTZ-template/blob/main/hooks/useDebounce.js'
+    },
+    {
+        title: 'useOnClickOutside',
+        subText: 'Listen for clicks outside the element of interest',
+        link: 'https://github.com/KaustubhKumar05/NTZ-template/blob/main/hooks/useOnClickOutside.js'
+    }
 ];
 const sections = [
     { title: 'Starter template for frontend projects', array: tech, icon: <LegoIcon /> },
@@ -70,8 +99,16 @@ export default function Home() {
                     }
                     modal={modal}
                 />
+                <div className="flex gap-2 items-center text-primary-dark">
+                    <p className="font-bold text-3xl text-primary-default">NTZ template</p>
 
-                <p className="font-bold text-3xl text-primary-default">NTZ template</p>
+                    <a
+                        href="https://github.com/KaustubhKumar05/NTZ-template"
+                        target="_blank"
+                        rel="noreferrer">
+                        <GithubIcon style={{ height: '32px', width: '32px' }} />
+                    </a>
+                </div>
                 {sections.map((section, id) => (
                     <div key={id}>
                         <p className="text-primary-light font-semibold text-xl mb-4 mt-8 flex gap-2 items-center">
@@ -79,14 +116,14 @@ export default function Home() {
                         </p>
                         <ul className="text-primary-light text-xl flex gap-4 flex-wrap">
                             {section?.array.map((item, id) => (
-                                <li
-                                    key={id}
-                                    className="text-primary-light p-3 text-lg border-bord-light border-2 rounded-lg w-full md:max-w-[265px] font-medium hover:bg-background-light hover:border-bord-default">
-                                    {item.title}{' '}
-                                    <p className="text-primary-lighter font-normal">
-                                        {item.subText}
-                                    </p>
-                                </li>
+                                <a href={item.link} key={id}>
+                                    <li className="text-primary-light p-3 text-lg border-bord-light border-2 rounded-lg w-full md:max-w-[265px] font-medium h-full hover:bg-background-light hover:border-bord-default">
+                                        {item.title}{' '}
+                                        <p className="text-primary-lighter font-normal">
+                                            {item.subText}
+                                        </p>
+                                    </li>
+                                </a>
                             ))}
                         </ul>
                     </div>

@@ -32,11 +32,6 @@ const tech = [
         title: 'React Icons',
         subText: 'Icon library developed by 100ms',
         link: 'https://ui.100ms.live/'
-    },
-    {
-        title: 'UUID',
-        subText: 'For generating random and unique IDs',
-        link: 'https://www.npmjs.com/package/uuid'
     }
 ];
 const hooks = [

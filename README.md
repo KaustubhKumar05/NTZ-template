@@ -9,7 +9,7 @@ Interact with the components [here!](https://ntz-five.vercel.app/)
 ## Libraries included:
 
 -   React Icons: An icon library by [100ms](https://100ms.live)
--   UUID: A useful library for generating random and unique IDs
+
 
 ## Custom hooks:
 

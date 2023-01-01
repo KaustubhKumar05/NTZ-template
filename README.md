@@ -4,7 +4,7 @@ Template for starting frontend projects. Contains custom hooks, built in compone
 
 Interact with the components [here!](https://ntz-five.vercel.app/)
 
-![image](https://user-images.githubusercontent.com/57426646/210043800-6e92c393-9b91-4799-93f2-bd421c278584.png)
+![image](https://user-images.githubusercontent.com/57426646/210170371-80539376-9500-4e8d-9f1d-5a2d9972286b.png)
 
 ## Libraries included:
 

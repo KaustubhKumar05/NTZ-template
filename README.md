@@ -8,16 +8,15 @@ Interact with the components [here!](https://ntz-five.vercel.app/)
 
 ## Libraries included:
 
--   React Icons: An icon library by [100ms](https://100ms.live)
-
+-   React Icons: An icon library developed by [100ms](https://100ms.live)
 
 ## Custom hooks:
 
--   `useLocalStorage`: Create states that persist using local storage
+-   `useLocalStorage` : Create states that persist using local storage
 
--   `useDebounce`: Handles debounce for rapidly changing values
+-   `useDebounce` : Handles debounce for rapidly changing values
 
--   `useOnClickOutside`: Listen for clicks outside the element of interest
+-   `useOnClickOutside` : Listen for clicks outside the element of interest
 
 ## Components:
 

@@ -11,6 +11,8 @@ import Input from '../components/common/Input';
 import Button from '../components/common/Button';
 import Modal from '../components/common/Modal';
 
+const iconStyle = { minHeight: '24px', minWidth: '24px' };
+
 const tech = [
     {
         title: 'Next.js',
@@ -52,9 +54,17 @@ const hooks = [
     }
 ];
 const sections = [
-    { title: 'Starter template for frontend projects', array: tech, icon: <LegoIcon /> },
-    { title: 'Useful custom hooks:', array: hooks, icon: <WebhookIcon /> },
-    { title: 'Custom components and design system:', array: [], icon: <LayoutIcon /> }
+    {
+        title: 'Starter template for frontend projects',
+        array: tech,
+        icon: <LegoIcon style={iconStyle} />
+    },
+    { title: 'Useful custom hooks:', array: hooks, icon: <WebhookIcon style={iconStyle} /> },
+    {
+        title: 'Custom components and design system:',
+        array: [],
+        icon: <LayoutIcon style={iconStyle} />
+    }
 ];
 
 export default function Home() {
@@ -123,13 +133,13 @@ export default function Home() {
                         </ul>
                     </div>
                 ))}
-                <div className="flex gap-2 items-center">
+                <div className="flex flex-wrap gap-2 items-center">
                     <Input placeholder="Placeholder text" className="text-sm p-2" />
                     <Button className="text-sm" onClick={() => setModal(true)}>
                         View modal
                     </Button>
                 </div>
-                <div className="flex gap-3 mt-4">
+                <div className="flex gap-3 mt-4 flex-wrap">
                     <Button className="text-sm">Standard</Button>
                     <Button variant="outlined" className="text-sm">
                         Outlined
